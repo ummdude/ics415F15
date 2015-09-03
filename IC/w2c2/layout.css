@@ -1,0 +1,9 @@
+test{ color: red;}
+
+table.border, th, td {
+     border: 1px solid black;
+   }
+
+table.borderlesst {
+  color: blue;
+}
