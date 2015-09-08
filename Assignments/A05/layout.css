@@ -1,0 +1,31 @@
+.test{ color: red;}
+
+#index{
+  height="100%";
+}
+
+#header{
+  height="25%";
+}
+
+#navbar{
+  height:50px;
+}
+
+#sidebar{
+  width="25%";
+}
+
+#footer{
+  color: green;
+  height:50px;
+}
+
+
+table.wborder, th, td {
+  border: 1px solid black;
+}
+
+table.borderlesst {
+  color: blue;
+}

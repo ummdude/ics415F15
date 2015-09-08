@@ -1,8 +1,12 @@
-test{ color: red;}
+.test{ color: red;}
 
-table.border, th, td {
-     border: 1px solid black;
-   }
+#head {
+  height: 75%;
+}
+
+table.wborder, th, td {
+  border: 1px solid black;
+}
 
 table.borderlesst {
   color: blue;
