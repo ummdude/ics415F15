@@ -12,15 +12,26 @@
 <body>
   <div class="container">
     <h2>w4c1 Javascript Events & Effects</h2>
-
+    <h3>Jquery Events</h3>
     <div id="element1">element1 hides element2 (click)</div>
     <div id="element2">element2 controlled by element1 and element3</div>
     <div id="element3">element3 shows element2 (click)</div>
     <div id="element4">element4 controls element5 (mouse over)</div>
     <div id="element5">element5 controlled by element4</div>
 
+    <h3>Dom Events</h3>
     <font onmouseover="this.color='red';" onmouseout="this.color='blacḱ';">Text1</font>
     <font onmouseover="this.color='black';" onmouseout="this.color='red';">Text2</font>
+    <div onmouseover="this.color='black';" onmouseout="this.color='red';">Text3</div>
+
+    <!-- http://www.w3schools.com/js/js_events.asp -->
+    <!-- obtains element with id "demo" and places the function "Date()" inside it. -->
+    <button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+    <div id="demo"></div>
+
+    <div onmouseover="getElementById('foo').innerHTML='words'">appear(mouse over)</div>
+    <div id="foo"></div>
+    <div onmouseout="getElementById('foo').innerHTML=''">disappear(mouse out)</div>
     <!---->
   </div> <!--container-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
