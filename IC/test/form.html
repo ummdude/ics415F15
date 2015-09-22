@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale1">
+  <title>w2c2 Javascript form</title>
+  <link rel="stylesheet" type="text/css" href="layout.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script>
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == null || x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <form name="myForm" action="process.html"
+          onsubmit="return validateForm()" method="get">
+      Name: <input type="text" name="fname">
+      <input type="submit" value="Submit">
+    </form>
+
+  </div> <!--container-->
+  <!---->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -5,20 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv=""X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale1">
-  <title>Erick's Website</title>
+  <title>A07 demo form</title>
   <link rel="stylesheet" type="text/css" href="layout.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <div class="row"> <!--content-->
-
-    </div> <!--content-->
-    <div class="row"> <!--footer-->
-        <div class="col-md-12">
-          <p>Copyright(C) Erick Recaido</p>
-        </div>
-    </div> <!--footer-->
+    <h2>demo form</h2>
+    <form name=”myForm” action=”demo_form.html” onsubmit=”return validateForm()” method=”get”>
+      <div class=”form-group”>
+        <label for=”username”>User name: </label>
+        <input type=”text” name=”name” id=”username”>
+      </div>
+      <div class=”form-group”>
+        <label for=”email”>Email: </label>
+        <input type=”email” name=”email” id=”email”>
+      </div>
+      <div class=”form-group”>
+        <label for=”password”>Password: </label>
+        <input type=”password” name=”password” id=”password”>
+      </div>
+      <div class=”form-group”>
+        <label for=”confirm”>Confirm Password: </label>
+        <input type=”password” name=”confirm” id=”confirm”>
+      </div>
+      <input type=”submit” value=”Submit”>
+    </form>
   </div> <!--container-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
