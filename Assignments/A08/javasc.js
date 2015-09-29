@@ -8,13 +8,21 @@ $(document).ready(function(){
 
   $("#q1").click(function(){
     $("#q1").css('color', 'red');
-    $("#q1").text("Q: Number after 1? (-)");
+    if ($("#q1s").text() == "(+)") {
+      $("#q1s").text("(-)");
+    } else {
+      $("#q1s").text("(+)");
+    }
     $("#a1").toggle();
   });
 
   $("#q2").click(function(){
     $("#q2").css('color', 'red');
-    $("#q2").text("Q: Letter after A? (-)");
+    if ($("#q2s").text() == "(+)") {
+      $("#q2s").text("(-)");
+    } else {
+      $("#q2s").text("(+)");
+    }
     $("#a2").toggle();
   });
 
