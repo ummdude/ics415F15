@@ -1,7 +1,12 @@
 Tasks = new Mongo.Collection("tasks");
 
-// Router.route('/');
-// Router.route('/register');
+Router.route('/', {
+  template: 'home'
+});
+
+Router.route('/create-note',{
+  template: 'create-note'
+});
 
 if (Meteor.isClient) {
   // This code only runs on the client

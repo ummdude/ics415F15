@@ -13,6 +13,10 @@
 
     {{/if}}
   </header>
+</div>
+</body>
+
+<template name="home">
   <p>
     Initial simple idea is to create a web page for a user to read and write basic simple notes quickly.
     A user may create multiple notes with perhaps some limit.
@@ -23,7 +27,7 @@
     <li>double columns for optimal usage of window space</li>
     <li>resizeable dual view of the same or 2 doumentsin one window</li>
   </ul>
-    <p>Possible features include:</p>
+  <p>Possible features include:</p>
   <ul>
     <li>tabbed files, like excel has multiple sheets</li>
     <li>simple spreadsheets with basic functions implemented</li>
@@ -31,26 +35,16 @@
     <p>Site concepts taken from:</p>
     <li>Google Docs, paste bin, wikipedia, spreadsheet software, text document software</li>
   </ul>
-    <p>Todo:</p>
+  <p>Todo:</p>
   <ul>
     <li>document edit page</li>
     <li>documents page</li>
     <li>login page</li>
   </ul>
-  </p>
-  <textarea cols="80" rows="8">
-  Paste text here
-  </textarea>
+</template>
+
+<template name="create-note">
+  <h2>create note</h2>
+  <textarea cols="80" rows="8">Paste text here</textarea>
   <input type="submit" value="Submit">
-</div>
-</body>
-
-<!--
-<template name="home">
-  <p>Welcome to the Todos application.</p>
 </template>
-
-<template name="register">
-  <h2>Register</h2>
-</template>
--->
