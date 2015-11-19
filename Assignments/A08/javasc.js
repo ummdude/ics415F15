@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   $("#q2").click(function(){
     $("#q2").css('color', 'red');
+    var q2tex = $("#q2").text[2]
     if ($("#q2s").text() == "(+)") {
       $("#q2s").text("(-)");
     } else {
